@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.2">
   <diagram name="Página-1" id="S5ZN6NzbMzPls7skPUnp">
-    <mxGraphModel dx="1158" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="906" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,8 +16,11 @@
         <mxCell id="SW1" parent="1" style="shape=mxgraph.electrical.switches.switch_spst;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Interruptor CC" vertex="1">
           <mxGeometry height="20" width="20" x="180" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="FUSE1" parent="1" style="shape=mxgraph.electrical.fuses.fuse;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 20A" vertex="1">
+        <mxCell id="FUSE_PV" parent="1" style="shape=mxgraph.electrical.fuses.fuse_ieee;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 20A" vertex="1">
           <mxGeometry height="20" width="20" x="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FUSE_ARG" parent="1" style="shape=mxgraph.electrical.fuses.fuse_ieee;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 20A" vertex="1">
+          <mxGeometry height="20" width="20" x="220" y="190" as="geometry" />
         </mxCell>
         <mxCell id="REG" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="Regulador MPPT&lt;br&gt;Deming 750W 12V" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="100" as="geometry" />
@@ -40,10 +43,13 @@
         <mxCell id="SW2" parent="1" style="shape=mxgraph.electrical.switches.switch_spst;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Interruptor Bat" vertex="1">
           <mxGeometry height="20" width="20" x="520" y="130" as="geometry" />
         </mxCell>
+        <mxCell id="FUSE_BAT" parent="1" style="shape=mxgraph.electrical.fuses.fuse_ieee;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 30A" vertex="1">
+          <mxGeometry height="20" width="20" x="560" y="130" as="geometry" />
+        </mxCell>
         <mxCell id="INV" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="Inversor&lt;br&gt;1000 W" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="FUSE2" parent="1" style="shape=mxgraph.electrical.fuses.fuse;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 10A" vertex="1">
+        <mxCell id="FUSE_CA" parent="1" style="shape=mxgraph.electrical.fuses.fuse_ieee;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 10A" vertex="1">
           <mxGeometry height="20" width="20" x="720" y="160" as="geometry" />
         </mxCell>
         <mxCell id="LAMP" parent="1" style="shape=mxgraph.electrical.lamps.incandescent_lamp;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Lámpara&lt;br&gt;100 W" vertex="1">
@@ -52,34 +58,43 @@
         <mxCell id="EARTH" parent="1" style="shape=mxgraph.electrical.misc.ground;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="" vertex="1">
           <mxGeometry height="20" width="20" x="460" y="200" as="geometry" />
         </mxCell>
+        <mxCell id="LED" parent="1" style="shape=mxgraph.electrical.misc.led;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="LED Operación" vertex="1">
+          <mxGeometry height="20" width="20" x="360" y="180" as="geometry" />
+        </mxCell>
         <mxCell id="CONN1" edge="1" parent="1" source="PV" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW1" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
         <mxCell id="CONN2" edge="1" parent="1" source="GEN" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW1" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN3" edge="1" parent="1" source="SW1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE1" value="">
+        <mxCell id="CONN3" edge="1" parent="1" source="SW1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE_PV" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN4" edge="1" parent="1" source="FUSE1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="REG" value="">
+        <mxCell id="CONN4" edge="1" parent="1" source="FUSE_PV" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="REG" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN5" edge="1" parent="1" source="REG" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="BAT1" value="">
+        <mxCell id="CONN5" edge="1" parent="1" source="FUSE_ARG" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="REG" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN6" edge="1" parent="1" source="BAT1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW2" value="">
+        <mxCell id="CONN6" edge="1" parent="1" source="REG" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="BAT1" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN7" edge="1" parent="1" source="SW2" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="INV" value="">
+        <mxCell id="CONN7" edge="1" parent="1" source="BAT1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW2" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN8" edge="1" parent="1" source="INV" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE2" value="">
+        <mxCell id="CONN8" edge="1" parent="1" source="SW2" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE_BAT" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN9" edge="1" parent="1" source="FUSE2" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="LAMP" value="">
+        <mxCell id="CONN9" edge="1" parent="1" source="FUSE_BAT" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="INV" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
-        <mxCell id="CONN10" edge="1" parent="1" source="BAT1" style="endArrow=none;html=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" target="EARTH" value="">
+        <mxCell id="CONN10" edge="1" parent="1" source="INV" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE_CA" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN11" edge="1" parent="1" source="FUSE_CA" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="LAMP" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN12" edge="1" parent="1" source="BAT1" style="endArrow=none;html=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" target="EARTH" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry" />
         </mxCell>
         <mxCell id="CC1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CC" vertex="1">
@@ -93,9 +108,6 @@
         </mxCell>
         <mxCell id="CA1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CA" vertex="1">
           <mxGeometry height="20" width="30" x="700" y="170" as="geometry" />
-        </mxCell>
-        <mxCell id="LED" parent="1" style="shape=mxgraph.electrical.misc.led;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="LED Operación" vertex="1">
-          <mxGeometry height="20" width="20" x="360" y="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
