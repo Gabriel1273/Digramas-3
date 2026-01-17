@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.2">
+  <diagram name="Página-1" id="S5ZN6NzbMzPls7skPUnp">
+    <mxGraphModel dx="1158" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PV" parent="1" style="shape=stencil(width=50,height=30,aspect=fixed);html=1;whiteSpace=wrap;verticalAlign=middle;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;direction=south;rotation=0;flipH=0;flipV=0;align=center;verticalLabelPosition=bottom;labelPosition=center;spacing=0;spacingTop=-5;spacingLeft=0;spacingRight=0;spacingBottom=0;imageAspect=0;image=img/lib/iec/power/photovoltaic_cell.svg;" value="Panel PV&lt;br&gt;200 W, 12 V" vertex="1">
+          <mxGeometry height="30" width="50" x="100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GEN" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Aerogenerador&lt;br&gt;1600 W, 12 V" vertex="1">
+          <mxGeometry height="40" width="40" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="BLADES" parent="1" style="shape=triangle;direction=north;fillColor=#000000;strokeColor=#000000;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="140" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="SW1" parent="1" style="shape=mxgraph.electrical.switches.switch_spst;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Interruptor CC" vertex="1">
+          <mxGeometry height="20" width="20" x="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FUSE1" parent="1" style="shape=mxgraph.electrical.fuses.fuse;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 20A" vertex="1">
+          <mxGeometry height="20" width="20" x="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="REG" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="Regulador MPPT&lt;br&gt;Deming 750W 12V" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VM" parent="1" style="shape=mxgraph.electrical.instruments.voltmeter;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="V" vertex="1">
+          <mxGeometry height="20" width="20" x="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AM" parent="1" style="shape=mxgraph.electrical.instruments.ammeter;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="A" vertex="1">
+          <mxGeometry height="20" width="20" x="330" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BAT1" parent="1" style="shape=mxgraph.electrical.batteries.batteryCell;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="60" width="30" x="440" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BAT2" parent="1" style="shape=mxgraph.electrical.batteries.batteryCell;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="60" width="30" x="470" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BATTERY_LABEL" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Baterías&lt;br&gt;12 V, 200 Ah" vertex="1">
+          <mxGeometry height="20" width="60" x="460" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="SW2" parent="1" style="shape=mxgraph.electrical.switches.switch_spst;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Interruptor Bat" vertex="1">
+          <mxGeometry height="20" width="20" x="520" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="INV" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=middle;verticalAlign=middle;" value="Inversor&lt;br&gt;1000 W" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FUSE2" parent="1" style="shape=mxgraph.electrical.fuses.fuse;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Fusible 10A" vertex="1">
+          <mxGeometry height="20" width="20" x="720" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="LAMP" parent="1" style="shape=mxgraph.electrical.lamps.incandescent_lamp;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Lámpara&lt;br&gt;100 W" vertex="1">
+          <mxGeometry height="40" width="40" x="780" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EARTH" parent="1" style="shape=mxgraph.electrical.misc.ground;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="460" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN1" edge="1" parent="1" source="PV" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN2" edge="1" parent="1" source="GEN" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN3" edge="1" parent="1" source="SW1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN4" edge="1" parent="1" source="FUSE1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="REG" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN5" edge="1" parent="1" source="REG" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="BAT1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN6" edge="1" parent="1" source="BAT1" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="SW2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN7" edge="1" parent="1" source="SW2" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="INV" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN8" edge="1" parent="1" source="INV" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="FUSE2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN9" edge="1" parent="1" source="FUSE2" style="endArrow=none;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" target="LAMP" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CONN10" edge="1" parent="1" source="BAT1" style="endArrow=none;html=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" target="EARTH" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CC1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CC" vertex="1">
+          <mxGeometry height="20" width="30" x="160" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CC2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CC" vertex="1">
+          <mxGeometry height="20" width="30" x="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CC3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CC" vertex="1">
+          <mxGeometry height="20" width="30" x="500" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CA1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CA" vertex="1">
+          <mxGeometry height="20" width="30" x="700" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="LED" parent="1" style="shape=mxgraph.electrical.misc.led;html=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fillColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;" value="LED Operación" vertex="1">
+          <mxGeometry height="20" width="20" x="360" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
